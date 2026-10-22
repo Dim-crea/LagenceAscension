@@ -1,0 +1,40 @@
+<!--
+  Ce fichier n'est jamais affiché aux visiteurs. Il permet uniquement à Netlify de
+  détecter les formulaires "contact", "quick" et "club" au moment du build (les pages Next.js
+  sont générées dynamiquement). Les vrais formulaires : components/moxie/ProjectForm.jsx,
+  components/moxie/QuickForm.jsx et components/moxie/club/ClubForm.jsx.
+-->
+<!DOCTYPE html>
+<html>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="company" />
+      <input type="text" name="name" />
+      <input type="text" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="website" />
+      <input type="text" name="startDate" />
+      <input type="text" name="budget" />
+      <input type="text" name="budgetType" />
+      <input type="text" name="types" />
+      <input type="text" name="source" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+    <form name="quick" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="phone" />
+      <input type="text" name="project" />
+      <input type="text" name="budget" />
+      <input type="text" name="bot-field" />
+    </form>
+    <form name="club" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="activity" />
+      <input type="text" name="link" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>
